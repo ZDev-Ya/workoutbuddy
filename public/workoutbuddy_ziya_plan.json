@@ -1,0 +1,382 @@
+{
+  "version": "1.0",
+  "generated_at": "2025-08-13T12:07:19.933549Z",
+  "user": {
+    "name": "Ziya",
+    "arm_circumference_cm_start": 38.5,
+    "goals": {
+      "hypertrophy_upper_body": true,
+      "fat_loss_light_cardio": true
+    },
+    "preferences": {
+      "skip_legs": true,
+      "love_cables": true
+    }
+  },
+  "tracking": {
+    "fields": [
+      "weight",
+      "reps",
+      "rpe",
+      "notes"
+    ],
+    "autoprogression": {
+      "method": "double_progression",
+      "rep_range_rule": "When you hit the TOP of the rep range for all sets with RPE <= 8 in two consecutive sessions, increase load.",
+      "increment_pct_default": 0.025,
+      "increment_pct_big_moves": 0.05,
+      "deload_rule": "If RPE > 9 or reps drop below the range for 2 sessions, reduce load by 5–10%."
+    },
+    "progress_bars": [
+      {
+        "metric": "weekly_sessions_completed",
+        "target": 5
+      },
+      {
+        "metric": "weekly_volume_chest_kg",
+        "target_hint": "progressive +5–10%/month"
+      }
+    ]
+  },
+  "weekly_schedule": [
+    {
+      "day": "Monday",
+      "title": "Pecs & Arms — Volume (1h)",
+      "warmup": [
+        "5–7 min cardio léger + mobilisation épaules/poitrine",
+        "2 séries d’échauffement progressif sur le premier mouvement"
+      ],
+      "exercises": [
+        {
+          "name": "Développé couché (barre ou haltères)",
+          "equipment": "barbell_or_dumbbells",
+          "sets": 4,
+          "reps": "8–10",
+          "rest_sec": "60–75",
+          "tempo": "3-0-1-0 (descente lente 3s, montée explosive)",
+          "track": true,
+          "start_weight_kg": 50
+        },
+        {
+          "name": "Développé incliné (haltères ou barre)",
+          "equipment": "incline_bench",
+          "sets": 3,
+          "reps": "8–12",
+          "rest_sec": "60–75",
+          "tempo": "3-0-1-0",
+          "notes": "Focus partie haute des pectoraux, contraction volontaire en haut.",
+          "track": true,
+          "start_weight_kg": "40–50"
+        },
+        {
+          "name": "Dips lestés ou au poids du corps (prise large pour les pecs)",
+          "equipment": "dip_station",
+          "sets": 3,
+          "reps": "8–12",
+          "rest_sec": "60–75",
+          "tempo": "2-0-1-0",
+          "notes": "Gainage du corps; ne pas verrouiller complètement les coudes.",
+          "track": true
+        },
+        {
+          "name": "Poulie vis-à-vis basse (low-to-high fly)",
+          "equipment": "cable_machine",
+          "sets": 3,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "tempo": "2-1-2-1",
+          "notes": "Contraction maximale en fin de mouvement.",
+          "track": true
+        },
+        {
+          "name": "Curl barre EZ ou haltères",
+          "equipment": "ez_bar_or_dumbbells",
+          "sets": 4,
+          "reps": "8–12",
+          "rest_sec": "60",
+          "tempo": "2-1-1-0",
+          "track": true
+        },
+        {
+          "name": "Curl marteau (haltères) ou corde à la poulie",
+          "equipment": "dumbbells_or_cable_rope",
+          "sets": 3,
+          "reps": "10–12",
+          "rest_sec": "60",
+          "tempo": "2-1-1-0",
+          "notes": "Focus brachial pour un biceps plus épais.",
+          "track": true,
+          "start_weight_kg": 14
+        },
+        {
+          "name": "Barre au front (skull crushers) OU dips serrés",
+          "equipment": "ez_bar_or_bodyweight",
+          "sets": 4,
+          "reps": "8–12",
+          "rest_sec": "60",
+          "tempo": "3-0-1-0",
+          "track": true
+        },
+        {
+          "name": "Extension corde à la poulie (triceps)",
+          "equipment": "cable_rope",
+          "sets": 3,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "tempo": "2-1-2-0",
+          "track": true,
+          "start_weight_kg": 35
+        }
+      ],
+      "cooldown": [
+        "Étirements légers poitrine/bras 3–5 min"
+      ],
+      "tags": [
+        "upper_body",
+        "chest",
+        "arms",
+        "cables"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "title": "Dos & Épaules — Câbles (1h)",
+      "exercises": [
+        {
+          "name": "Tirage vertical (lat pulldown)",
+          "equipment": "machine_or_cable",
+          "sets": 4,
+          "reps": "8–12",
+          "rest_sec": "60–75",
+          "track": true
+        },
+        {
+          "name": "Rowing assis à la poulie (seated cable row)",
+          "equipment": "cable_machine",
+          "sets": 4,
+          "reps": "8–12",
+          "rest_sec": "60–75",
+          "track": true
+        },
+        {
+          "name": "Pull-over à la poulie (straight-arm pulldown)",
+          "equipment": "cable_machine",
+          "sets": 3,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "track": true
+        },
+        {
+          "name": "Élévations latérales à la poulie",
+          "equipment": "cable_machine",
+          "sets": 4,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "track": true
+        },
+        {
+          "name": "Face pull (arrière d’épaules)",
+          "equipment": "cable_machine",
+          "sets": 3,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "track": true
+        },
+        {
+          "name": "Gainage (planche + side plank)",
+          "equipment": "bodyweight",
+          "sets": 3,
+          "reps": "30–45 sec",
+          "rest_sec": "45",
+          "track": false
+        }
+      ],
+      "tags": [
+        "upper_body",
+        "back",
+        "shoulders",
+        "cables"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "title": "Cardio Z2 (option repos)",
+      "cardio": {
+        "modality": "course à pied",
+        "duration_min": 25,
+        "intensity": "Zone 2 (RPE 4–5/10; respiration soutenable, conversation possible)",
+        "progression": "Ajouter 2–3 minutes par semaine jusqu’à 35 minutes."
+      },
+      "alt": "Repos complet si fatigue élevée (RPE > 7 la veille).",
+      "tags": [
+        "cardio",
+        "fat_loss",
+        "recovery"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "title": "Pecs & Bras — Câbles (1h)",
+      "exercises": [
+        {
+          "name": "Développé à la poulie (cable press, unilatéral ou double)",
+          "equipment": "cable_machine",
+          "sets": 4,
+          "reps": "8–12",
+          "rest_sec": "60–75",
+          "track": true
+        },
+        {
+          "name": "Écarté incliné à la poulie",
+          "equipment": "cable_machine",
+          "sets": 3,
+          "reps": "10–12",
+          "rest_sec": "60",
+          "track": true
+        },
+        {
+          "name": "Dips machine (ciblage pecs)",
+          "equipment": "machine",
+          "sets": 3,
+          "reps": "8–12",
+          "rest_sec": "60–75",
+          "track": true,
+          "start_weight_kg": 80
+        },
+        {
+          "name": "Curl à la poulie barre droite",
+          "equipment": "cable_machine",
+          "sets": 4,
+          "reps": "8–12",
+          "rest_sec": "60",
+          "track": true
+        },
+        {
+          "name": "Curl biceps en rotation à la poulie (unilatéral)",
+          "equipment": "cable_machine",
+          "sets": 2,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "track": true
+        },
+        {
+          "name": "Presse triceps corde",
+          "equipment": "cable_machine",
+          "sets": 4,
+          "reps": "10–12",
+          "rest_sec": "60",
+          "track": true
+        },
+        {
+          "name": "Extension triceps au-dessus de la tête (corde)",
+          "equipment": "cable_machine",
+          "sets": 2,
+          "reps": "12–15",
+          "rest_sec": "45–60",
+          "track": true
+        }
+      ],
+      "tags": [
+        "upper_body",
+        "chest",
+        "arms",
+        "cables"
+      ]
+    },
+    {
+      "day": "Friday",
+      "title": "Arms Focus — Supersets (1h)",
+      "format": "Supersets A/B avec repos 60 sec entre supersets",
+      "exercises": [
+        {
+          "superset": "A",
+          "a": {
+            "name": "Curl biceps à la poulie (barre)",
+            "sets": 4,
+            "reps": "8–12",
+            "track": true
+          },
+          "b": {
+            "name": "Presse triceps corde",
+            "sets": 4,
+            "reps": "8–12",
+            "track": true
+          }
+        },
+        {
+          "superset": "B",
+          "a": {
+            "name": "Curl incliné (haltères) OU preacher machine",
+            "sets": 3,
+            "reps": "10–12",
+            "track": true
+          },
+          "b": {
+            "name": "Extension triceps à la poulie (V-bar)",
+            "sets": 3,
+            "reps": "10–12",
+            "track": true
+          }
+        },
+        {
+          "superset": "C",
+          "a": {
+            "name": "Curl marteau à la poulie (corde)",
+            "sets": 3,
+            "reps": "12–15",
+            "track": true
+          },
+          "b": {
+            "name": "Kickback à la poulie (unilatéral)",
+            "sets": 3,
+            "reps": "12–15",
+            "track": true
+          }
+        },
+        {
+          "name": "Finisher: Fly à la poulie en drop-set",
+          "sets": 2,
+          "reps": "15+",
+          "rest_sec": "—",
+          "track": false
+        }
+      ],
+      "tags": [
+        "arms",
+        "cables",
+        "supersets"
+      ]
+    },
+    {
+      "day": "Saturday",
+      "title": "Option: 100 pompes",
+      "instructions": "Réaliser 100 pompes au total en aussi peu de séries que possible sans aller à l’échec (ex: 25-20-20-15-10-10).",
+      "track": {
+        "field": "total_reps",
+        "target": 100
+      },
+      "tags": [
+        "pushups",
+        "optional"
+      ]
+    },
+    {
+      "day": "Sunday",
+      "title": "Repos",
+      "instructions": "Repos complet, mobilité légère (5–10 min) si besoin.",
+      "tags": [
+        "rest"
+      ]
+    }
+  ],
+  "nutrition_recovery": {
+    "protein_g_per_kg": 2.2,
+    "sleep_hours_min": 7,
+    "water_l_min": 3.0,
+    "notes": [
+      "Temps sous tension prioritaire: descentes contrôlées (2–3s), montée explosive.",
+      "Repos 45–75s sur l’isolation; 60–90s sur polyarticulaires.",
+      "Mesure bras contracté chaque lundi matin (métrique de progression)."
+    ]
+  }
+}
